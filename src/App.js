@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import HomeScreen from './Components/HomeScreen';
 import { createContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 import AddEmp from './Components/AddEmp';
 import ReadEmp from './Components/ReadEmp';
 import UpdateEmp from './Components/UpdateEmp';
@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <Router>
           <Routes>
-              {/* <Route exact path="/emp/:action" element={<HomeScreen />} /> */}
+              <Route path="/" element={<Navigate to="/emp/create"/>}></Route>
               <Route path="/emp" element={<HomeScreen />} >
                 <Route path="create" element={<AddEmp/>}/>
                 <Route path="read" element={<ReadEmp/>}/>
