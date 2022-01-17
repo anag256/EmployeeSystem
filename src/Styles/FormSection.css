@@ -1,0 +1,101 @@
+.formSection{
+    background-color: #e3e1dc;
+    height: 100%;
+}
+.button_flx {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #233646;
+}
+.btn_form {
+    background: #233646;
+    color: #fff;
+    padding: 10px 34px;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+.btn_form:hover{
+    background-color: #607d8b;
+}
+.form_sec {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.form_sec>form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.form_sec>form>input {
+    padding: 12px 10px;
+    margin:15px 0;
+    outline: none;
+    border: none;
+}
+.form_sec>h3 {
+    font-size: 24px;
+    color: #233646;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #233646;
+}
+.gender {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.gender>input {
+    margin-right: 10px;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+}
+.femgender {
+    margin-left: 20px;
+}
+.btn_form.submitbtn {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.form_sec>form>input:disabled {
+    color: #233646;
+    border: 1px solid #233646;
+}
+.btn_active{
+    background-color: #607d8b;
+}
+.react-datepicker-wrapper input[type="text"] {
+ 
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+}
+.react-datepicker-wrapper input[type="text"]:disabled {
+    border: 1px solid;
+}
+@media (max-width:1023px){
+    .btn_form {
+        padding: 6px 13px;
+        border-radius: 10px;
+    }
+    .form_sec {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 12px;
+    }
+    .button_flx {
+        position: sticky;
+        top: 0;
+        background: #e3e1dc;
+    }
+    
+}
