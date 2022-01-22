@@ -7,11 +7,11 @@ function TopNavBar() {
     return (
         <>
         <div className='topNavBar'>
-          <div className='toggle_box' onClick={()=>setToggle(!toggle)}>
+          {/* <div className='toggle_box' onClick={()=>setToggle(!toggle)}>
             <span className='line'></span>
             <span className='line'></span>
             <span className='line'></span>
-          </div> 
+          </div>  */}
           <span className='emp_title'>Employee Management</span>
         </div>
         </>
