@@ -8,6 +8,10 @@
     justify-content: space-evenly;
     padding-bottom: 20px;
     border-bottom: 1px solid #233646;
+    position: sticky;
+    top: 0;
+    background: #e3e1dc;
+    z-index: 1;
 }
 .btn_form {
     background: #233646;
@@ -92,10 +96,6 @@
         width: 100%;
         padding: 0 12px;
     }
-    .button_flx {
-        position: sticky;
-        top: 0;
-        background: #e3e1dc;
-    }
+  
     
 }

@@ -14,6 +14,7 @@ function FormSection({action}) {
     const [gender,setgender]=useState("");
     const [employees,setEmployees]=useState([]);
     const [empID,setEmpID]=useState("");
+    const [errors,setErrors]=useState(false);
     const handleSubmit=(e,action)=>{
         e.preventDefault();
         if(action==='delete'){
@@ -28,7 +29,10 @@ function FormSection({action}) {
             setEmpID("");
         }
         else if(action==='create'){
-    
+            // if(errors){
+
+            // }
+            // else{
             const request={
                 id:uuid(),
                 firstname:firstName,
@@ -46,9 +50,9 @@ function FormSection({action}) {
             setEmail("");
             setDOB("");
             setgender("");
-            
+        } 
            
-        }
+        // }
         else if(action==="update"){
             const request={
                 id:empID,
@@ -109,7 +113,7 @@ function FormSection({action}) {
             </div>
             {action==='create' && <div className='form_sec'>
                 <h3>Create New Employee</h3>
-                <FormComponent action={action} handleSubmit={handleSubmit} firstName={firstName} setFirstName={setFirstName} lastName={lastName} setLastName={setLastName} email={email} setEmail={setEmail} dob={dob} setDOB={setDOB} gender={gender} setgender={setgender} radioCHangehandler={radioCHangehandler}/>
+                <FormComponent action={action} handleSubmit={handleSubmit} firstName={firstName} setFirstName={setFirstName} lastName={lastName} setLastName={setLastName} email={email} setEmail={setEmail} dob={dob} setDOB={setDOB} gender={gender} setgender={setgender} radioCHangehandler={radioCHangehandler} errors={errors} setErrors={setErrors}/>
             </div>}
             
             {action==='delete' && <div className='form_sec'>
